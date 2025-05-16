@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (
@@ -7,32 +8,32 @@ export default function Landing() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex gap-6 md:gap-10">
-            <a href="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <span className="inline-block font-bold text-xl bg-green-600 from-purple-600 to-blue-500 bg-clip-text text-transparent">
                 XPro
               </span>
-            </a>
+            </Link>
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
             <nav className="flex items-center space-x-2">
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
                 About
-              </a>
-              <a
-                href="/faq"
+              </Link>
+              <Link
+                to="/faq"
                 className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
                 FAQ
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
                 Contact
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
@@ -52,7 +53,7 @@ export default function Landing() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-4 md:flex-row">
-                  <a href="/trader">
+                  <Link to="/trader">
                     <Button
                       size="lg"
                       className="w-full bg-green-600 from-blue-600 to-indigo-600"
@@ -60,13 +61,13 @@ export default function Landing() {
                       I'm a Trader
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
-                  </a>
-                  <a href="/investor">
+                  </Link>
+                  <Link to="/investor">
                     <Button size="lg" variant="outline" className="w-full">
                       I'm an Investor
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
-                  </a>
+                  </Link>
                 </div>
                 <p className="text-sm text-muted-foreground">
                   Connect your Solana wallet to get started. All transactions
@@ -310,18 +311,18 @@ export default function Landing() {
             © 2025 Xdegen Pro. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <a
-              href="/terms"
+            <Link
+              to="/terms"
               className="text-sm text-muted-foreground underline-offset-4 hover:underline"
             >
               Terms
-            </a>
-            <a
-              href="/privacy"
+            </Link>
+            <Link
+              to="/privacy"
               className="text-sm text-muted-foreground underline-offset-4 hover:underline"
             >
               Privacy
-            </a>
+            </Link>
           </div>
         </div>
       </footer>
