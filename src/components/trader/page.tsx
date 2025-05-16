@@ -31,7 +31,7 @@ export default function TraderDashboard() {
           <div className="flex gap-6 md:gap-10">
             <a href="/" className="flex items-center space-x-2">
               <span className="inline-block font-bold text-xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-                Xdegen Pro
+                XPro
               </span>
             </a>
             <nav className="hidden gap-6 md:flex">
